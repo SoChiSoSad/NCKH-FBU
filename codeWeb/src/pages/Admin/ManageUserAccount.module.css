@@ -1,0 +1,288 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f6fa;
+}
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: rgb(99, 74, 158);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    transition: transform 0.3s ease; /* Hiệu ứng khi ẩn */
+}
+.sidebar.hidden {
+    transform: translateX(-100%); /* Ẩn sidebar bằng cách dịch nó ra ngoài màn hình */
+}
+.sidebar h1 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease; /* Hiệu ứng hover mượt */
+}
+.sidebar a:hover {
+    background-color: rgb(45, 26, 90);
+    width: 90%;
+}
+.sidebar a i {
+    margin-right: 10px;
+}
+
+.mainContent {
+    height: 100vh;
+    width: 160vh; /* Chiều rộng nội dung khi sidebar mở */
+    margin-left: 250px; /* Đẩy nội dung sang bên phải khi sidebar mở */
+    padding: 20px;
+    transition: margin-left 0.3s ease, width 0.3s ease; /* Hiệu ứng khi sidebar ẩn/hiện */
+}
+.mainContent.fullWidth {
+    height: 100vh;
+    width: 200vh; /* Chiều rộng đầy đủ khi sidebar ẩn */
+    margin-left: 0; /* Không đẩy nội dung */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.header h2 {
+    margin: 0;
+    font-size: 24px;
+}
+.header .userInfo {
+    display: flex;
+    align-items: center;
+}
+.header .userInfo img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.header .userInfo span {
+    font-size: 16px;
+}
+.viewAll {
+    color: red;
+    text-decoration: none;
+    float: right;
+    margin-top: -30px;
+}
+
+.submenu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+}
+.submenu.visible {
+    display: block;
+}
+.submenu a {
+    padding-left: 40px;
+    transition: background-color 0.3s ease;
+}
+.submenu a:hover {
+    background-color: rgb(45, 26, 90);
+    width: 90%;
+}
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar.hidden {
+        transform: translateX(-100%); /* Đảm bảo sidebar bị ẩn trên thiết bị nhỏ */
+    }
+    .mainContent {
+        width: 100%; /* Đảm bảo mainContent chiếm toàn bộ chiều rộng */
+        margin-left: 0; /* Không đẩy nội dung */
+    }
+}
+
+.content {
+    margin-top: 20px;
+}
+.content h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.filters input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+}
+.tableContainer {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+table th {
+    background-color: #f5f6fa;
+    font-weight: bold;
+    border-top: 1px solid #ddd;
+}
+table td {
+    background-color: #fff;
+}
+table td.actions i {
+    margin-right: 10px;
+    cursor: pointer;
+}
+table td.actions i.edit {
+    color: #007bff;
+}
+table td.actions i.delete {
+    color: #ff3b30;
+}
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f5f6fa;
+    border-top: 1px solid #ddd;
+}
+.pagination button{
+    background-color:rgb(99, 74, 158);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.pagination button:hover {
+    background-color: rgb(45, 26, 90);
+}
+.pagination .info {
+    font-size: 14px;
+    color: #888;
+}
+.pagination .controls {
+    display: flex;
+    align-items: center;
+}
+.pagination .controls i {
+    font-size: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.delete {
+    padding-left: 20px;
+    cursor: pointer;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Nền mờ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modalContent {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    max-width: 90%;
+    position: relative;
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  .modalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .modalHeader h2 {
+    margin: 0;
+  }
+  
+  .modalHeader .close {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .modalBody {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .modalBody img {
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+  }
+  
+  .modalBody p {
+    margin: 10px 0;
+  }
+  @keyframes fadeIn {
+    from {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

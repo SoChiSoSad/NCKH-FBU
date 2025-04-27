@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  section {
+    padding: 60px 40px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .titleBox {
+    max-width: 45%;
+    z-index: 1;
+  }
+  
+  section h1 {
+    font-size: 48px;
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+  }
+  
+  section p {
+    font-size: 20px;
+    color: #f0f0f0;
+    margin-bottom: 20px;
+  }
+  
+  .learnBtn {
+    padding: 12px 24px;
+    background-color: #000;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  }
+  
+  .learnBtn:hover {
+    background-color: #333;
+    transform: scale(1.05);
+  }
+  
+  /* Section colors (giữ nguyên) */
+  .htmlSection {
+    background-color: #9e70b1;
+    height: 400px;
+  }
+  
+  .cssSection {
+    background-color: #f4e1c9;
+    height: 400px;
+  }
+  
+  .JavaScriptSection {
+    background-color: rgb(255, 244, 163);
+    height: 400px;
+  }
+  
+  .JavaSection {
+    background-color: rgb(150, 212, 212);
+    height: 400px;
+  }
+  
+  /* Code example box */
+  .codeExample {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    height: 300px;
+    width: 350px;
+    z-index: 2;
+  }
+  
+  .codeExample h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  pre {
+    background-color: #f4f4f4;
+    padding: 12px;
+    border-radius: 10px;
+    overflow: auto;
+    height: 180px;
+    font-size: 14px;
+    line-height: 1.5;
+    border: 1px solid #ccc;
+  }
+  
+  .tryBtn {
+    margin-top: 10px;
+    padding: 10px 18px;
+    background-color: #665a87;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .tryBtn:hover {
+    background-color: #4b3f6b;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    section {
+      flex-direction: column;
+      align-items: flex-start;
+      height: auto;
+    }
+  
+    .titleBox {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .codeExample {
+      width: 100%;
+      height: auto;
+    }
+  
+    pre {
+      height: auto;
+    }
+  }
+
+/*  */
+
+
+.featuredPosts {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .featuredPosts h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .subheading {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .postsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .postCard {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .postCard:hover {
+    transform: translateY(-5px);
+  }
+  
+  .postCard img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+  }
+  
+  .cardContent {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  
+  .cardHeader {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #444;
+  }
+  
+  .verified {
+    color: #1e88e5;
+    font-size: 14px;
+  }
+  
+  .cardContent h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0 6px;
+    color: #222;
+  }
+  
+  .cardContent p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 12px;
+    flex-grow: 1;
+  }
+  
+  .meta {
+    font-size: 12px;
+    color: #999;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .tag {
+    background-color: #f3f3f3;
+    color: #555;
+    padding: 3px 8px;
+    border-radius: 999px;
+    font-size: 12px;
+  }
+  
+  .cardContent a {
+    align-self: flex-start;
+    font-size: 14px;
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  

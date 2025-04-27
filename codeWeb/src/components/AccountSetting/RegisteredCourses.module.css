@@ -1,0 +1,79 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+.content {
+  margin-left: 220px;
+  padding: 20px;
+}
+
+.content2 {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #fff;
+    height: auto;
+  }
+  
+  .courseCard {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .courseImage {
+    width: 250px;
+    height: 120px;
+    background: linear-gradient(45deg, #63cbe8, #0072ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10%;
+  }
+  
+  .courseCSS .courseImage{
+    background: linear-gradient(45deg, #599de0, #ec0bf0);
+  }
+
+  .courseJavaScript .courseImage{
+    background: linear-gradient(45deg, #d7bd9f, #ffaa00);
+
+  }
+  .courseInfo {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: bold;
+  }
+
+  .courseCard {
+    transition: transform 0.2s ease;
+  }
+  
+  .courseCard:hover {
+    cursor: pointer; 
+    transform: scale(1.02); 
+  }
+  
+  
+  .progressBar {
+    width: 100%;
+    height: 5px;
+    background-color: #e0e0e0;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #6a4db8;
+  }

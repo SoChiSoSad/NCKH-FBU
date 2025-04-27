@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.mainContent {
+    display: flex;
+    margin-top: 20px;
+}
+.content {
+    flex-grow: 2;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.content h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.content p {
+    margin-bottom: 20px;
+}
+.content .courseContent {
+    margin-bottom: 20px;
+}
+.content .courseContent h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.content .courseContent .chapter {
+    margin-bottom: 10px;
+}
+.content .courseContent .chapter h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.content .courseContent .chapter h3 i {
+    margin-right: 10px;
+}
+.content .courseContent .chapter ul {
+    list-style: none;
+    padding: 0;
+    display: none;
+}
+.content .courseContent .chapter ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+.content .courseContent .chapter ul li span {
+    color: #888;
+}
+.courseInfo {
+    width: 30%;
+    margin-left: 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 5px;
+}
+.courseInfo h3 {
+    font-size: 24px;
+    color: #ff5722;
+    margin-bottom: 10px;
+}
+.courseInfo a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.courseInfo ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+.courseInfo ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.courseInfo ul li i {
+    color: #ff5722;
+    margin-right: 10px;
+}
+.courseInfo ul li span {
+    color: #333;
+}
+.courseInfo img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+    .mainContent {
+        flex-direction: column;
+    }
+    .content {
+        width: 100%;
+    }
+    .courseInfo {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+.lessonList{
+    list-style: none;
+    padding: 0;
+    text-decoration: none;
+}
+.lessonItem{
+    border: 2px solid #f1f1f1;
+    padding: 8px 4px;
+}
+.Button {
+    background-color:#634a9e;
+    color:white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+    margin-bottom: 15px;
+  }
+  .Button:hover {
+    background-color: #341d6b;
+  }

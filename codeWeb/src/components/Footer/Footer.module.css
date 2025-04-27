@@ -1,0 +1,92 @@
+footer {
+    background-color: #4d4d4d;
+    color: white;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 0;
+    width: 1450px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.footerLinks {
+    flex: 1;
+}
+
+.footerLinks a {
+    display: block;
+    margin-bottom: 8px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.footerLinks a:hover {
+    color: #ddd;
+}
+
+.footerAbout {
+    flex: 2;
+    max-width: 300px;
+}
+
+.footerAbout p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.footerAbout .email {
+    color: #e57373;
+    text-decoration: none;
+}
+
+.footerAbout .email:hover {
+    text-decoration: underline;
+}
+
+.footerFollow {
+    flex: 1;
+    text-align: center;
+}
+
+.footerFollow p {
+    margin-bottom: 10px;
+}
+
+.footerFollow a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 24px;
+    color: #ccc;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.footerFollow a:hover {
+    color: #ffffff;
+    transform: scale(1.2);
+}
+
+.footerFollow a:last-child {
+    margin-right: 0;
+}
+
+footer p {
+    font-size: 14px;
+    color: #888;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+    border-top: 1px solid #555;
+    padding-top: 15px;
+}

@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+section {
+    padding: 40px;
+    position: relative;
+}
+
+.titleBox {
+    position: absolute;
+    top: 120px;
+    left: 200px;
+}
+
+.htmlSection {
+    height: 400px;
+    background-color: #9e70b1;
+    padding: 20px;
+}
+
+.cssSection {
+    background-color: #f4e1c9;
+    height: 400px;
+    padding: 20px;
+    position: relative;
+}
+
+.JavaScriptSection {
+    background-color: rgb(255, 244, 163);
+    height: 400px;
+    padding: 20px;
+    position: relative;
+}
+
+.JavaSection {
+    background-color: rgb(150, 212, 212);
+    height: 400px;
+    padding: 20px;
+    position: relative;
+}
+section h1 {
+    font-size: 36px;
+
+}
+
+section p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.learnBtn {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.codeExample {
+    position: absolute;
+    top: 50px; 
+    right: 50px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 300px;
+    width: 350px;
+}
+
+pre {
+    font-family: monospace;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 200px;
+}
+
+.tryBtn {
+    background-color: #665a87;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

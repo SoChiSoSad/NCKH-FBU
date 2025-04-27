@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    height: 570px;
+    background-image: url('../../images/background.png');
+    background-size: 1000px 570px;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    position: absolute;
+    top: 70px;
+    left: 250px;
+  }
+  
+  .signupBox {
+    padding: 0px 40px;
+    width: 50%;
+    margin-top: 10px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .inputField {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .inputField input {
+    width: 100%;
+    padding: 12px 50px 12px 40px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    background-color: #f4f4f4;
+  }
+  
+  .inputField .icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #888;
+  }
+  
+  .inputField .togglePassword {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #6f4cff;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .btn:hover {
+    background-color: #5737d6;
+  }
+  
+  .loginLink {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .loginLink a {
+    color: purple;
+    text-decoration: none;
+  }
+  
+  .terms {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  .terms label a {
+    color: purple;
+    text-decoration: none;
+  }
+  

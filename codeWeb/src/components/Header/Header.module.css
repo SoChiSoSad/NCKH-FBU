@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 60px;
+    background-color: white;
+    border-bottom: 2px solid #d19b83;
+}
+
+.logoImg {
+    width: 4rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.searchBar {
+    position: relative;
+    width: 400px;
+}
+
+.searchBar input {
+    width: 100%;
+    padding: 10px 40px 10px 10px; /* Khoảng trống phải để chứa biểu tượng */
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.searchBar .searchIcon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.authButtons {
+    display: flex;
+    gap: 10px;
+}
+
+.authButtons .loginBtn, 
+.authButtons .signupBtn {
+    padding: 8px 12px;
+    background-color: #d19b83;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.signupBtn {
+    background-color: #c9b2d6;
+}
+
+nav {
+    background-color: #d19b83;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav li {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 18px;
+    display: inline-block;
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+nav li:hover {
+    color: #3d3d3d;
+    transform: scale(1.2);
+}
+
+/* Khi mục được chọn, nó sẽ giữ màu khác */
+nav li.active {
+    color: #3d3d3d;  /* Thay đổi màu khi được chọn */
+    transform: scale(1.2);
+}
+
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .icons a {
+    margin-left: 20px;
+    font-size: 20px;
+    color: #666;
+    text-decoration: none;
+}
+.navbarLogout {
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: #ff4d4d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.navbarLogout:hover {
+    background-color: #ff1a1a;
+}
